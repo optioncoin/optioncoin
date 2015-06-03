@@ -1,0 +1,9 @@
+Building OPTION
+
+See doc/readme-qt.rst for instructions on building OPTION QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of OPTION.
+
+See doc/build-*.txt for instructions on building optiond,
+the intended-for-services, no-graphical-interface, reference
+implementation of OPTION.
