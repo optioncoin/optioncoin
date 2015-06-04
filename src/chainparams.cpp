@@ -133,7 +133,7 @@ public:
         genesis.nBits  = 0x1e0ffff0; 
         genesis.nNonce = 1341214;
         hashGenesisBlock = genesis.GetPoWHash();  
-		LogPrintf("hashGenesisTESTNETBlock = %s\n", genesis.GetPoWHash().ToString());
+	//	LogPrintf("hashGenesisTESTNETBlock = %s\n", genesis.GetPoWHash().ToString());
         //assert(hashGenesisBlock == uint256("0xed06d6896a023199bbf601cf5a111075a6e5f228f40ded889282066475e9c318"));
 
         vFixedSeeds.clear();
