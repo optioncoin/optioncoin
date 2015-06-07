@@ -69,11 +69,12 @@ Value getstakesubsidy(const Array& params, bool fHelp)
     }
 
     uint64_t nCoinAge;
+	int64_t nTime = GetTime();
     CTxDB txdb("r");
     if (!tx.GetCoinAge(txdb, nCoinAge))
         throw JSONRPCError(RPC_MISC_ERROR, "GetCoinAge failed");
 
-    return (uint64_t)GetProofOfStakeReward(nCoinAge, 0);
+    return (uint64_t)GetProofOfStakeReward(nCoinAge, 0, nTime);
 }
 
 Value getmininginfo(const Array& params, bool fHelp)
